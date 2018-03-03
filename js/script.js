@@ -9,15 +9,8 @@ function arrayTree(level) {
             array.push(' ');
         }
 
-        array.push('*');
-
-        if ( i < 1 ) {
-            console.log(array.join(''));
-            continue;
-        }
-
-        for ( var k = 1 ; k < (i * 2) ; k += 2 ) {
-            array.push('**');
+        for ( var k = 0 ; k <= (i * 2); k++ ) {
+            array.push('*');
         }
 
         console.log(array.join(''));
